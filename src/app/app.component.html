@@ -1,0 +1,16 @@
+<div class="container fluid">
+  <div class="row">
+    <div class="col-sm-2">
+      <app-navmenu></app-navmenu>
+    </div>
+    <div class="col-sm-10 body-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      &copy; {{year}} - {{sign}} - {{environmentName}}
+    </p>
+  </footer>
+</div>
