@@ -5,5 +5,10 @@
 
 export const environment = {
   production: false,
-  envName: 'development'
+  envName: 'development',
+  data: {
+    defaultConnection: {
+      connectionString: 'Development connection string'
+    }
+  }
 };
