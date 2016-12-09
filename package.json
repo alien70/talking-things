@@ -4,8 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "install": "ng b -prod",
-    "start": "ng b -prod & ng s -prod",
+    "start": "ng s -prod",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
