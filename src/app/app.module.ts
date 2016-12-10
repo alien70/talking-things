@@ -20,6 +20,7 @@ import { BaseRequestOptions } from '@angular/http';
 import { AuthenticationService } from './authentication.service';
 import { AlertService } from './alert.service';
 import { UserService } from './user.service';
+import { TopmenuComponent } from './topmenu/topmenu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UserService } from './user.service';
     HomeComponent,
     LoginComponent,
     RegistrationComponent,
-    AlertComponent
+    AlertComponent,
+    TopmenuComponent
   ],
   imports: [
     BrowserModule,
