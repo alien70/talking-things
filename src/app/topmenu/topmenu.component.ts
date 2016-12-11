@@ -13,6 +13,7 @@ import { User } from '../models/user';
     providers: [AuthenticationService]
 })
 export class TopmenuComponent implements OnInit {
+    loading = false;
     loggedIn: boolean = false;
     returnUrl: string;
 
@@ -21,6 +22,7 @@ export class TopmenuComponent implements OnInit {
         , private route: ActivatedRoute
         , private router: Router
         , private alertService: AlertService) {
+        this.loading = false;
     }
 
     ngOnInit() {
@@ -28,6 +30,7 @@ export class TopmenuComponent implements OnInit {
     }
 
     onLogout() {
+        this.loading = true;
         this.authenticationService.logout();
     }
 }
