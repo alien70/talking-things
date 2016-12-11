@@ -21,16 +21,20 @@ export class TopmenuComponent implements OnInit {
         private authenticationService: AuthenticationService
         , private route: ActivatedRoute
         , private router: Router
-        , private alertService: AlertService) {
-        this.loading = false;
+        , private alertService: AlertService) {        
     }
 
     ngOnInit() {
         this.returnUrl = this.route.snapshot.params['returnUrl'] || '/';
+        this.loading = false;
     }
 
     onLogout() {
         this.loading = true;
-        this.authenticationService.logout();
+        this.authenticationService.logout().subscribe(() => {
+            this.router.navigate(['/login']);
+        }, error => {
+            this.loading = false;
+        });
     }
 }

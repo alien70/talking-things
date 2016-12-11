@@ -8,7 +8,8 @@ import { User } from './models/user';
 
 @Injectable()
 export class AuthenticationService {
-        constructor(private http: Http) {
+
+    constructor(private http: Http) {
     }
 
     login(username: string, password: string) {
@@ -24,8 +25,12 @@ export class AuthenticationService {
             });
     }
 
-    logout() {        
-        localStorage.removeItem('auth_token');
+    logout() {
+        return new Observable(observer => {
+            setTimeout(function () {
+                localStorage.removeItem('auth_token');
+            }, 1000);
+        });
     }
 
     isLoggedIn() {

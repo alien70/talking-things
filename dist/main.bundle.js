@@ -1587,7 +1587,7 @@ $exports.store = store;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(13);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Identifiers; });
 /* unused harmony export assetUrl */
 /* harmony export (immutable) */ exports["d"] = resolveIdentifier;
@@ -1966,108 +1966,6 @@ if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(exports, "H", function() { return isDefaultChangeDetectionStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "o", function() { return ChangeDetectorStatus; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "G", function() { return LifecycleHooks; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "L", function() { return LIFECYCLE_HOOKS_VALUES; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "J", function() { return ReflectorReader; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return ViewContainer; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "f", function() { return CodegenComponentFactoryResolver; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "g", function() { return ComponentRef_; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return AppView; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return DebugAppView; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "h", function() { return NgModuleInjector; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "i", function() { return registerModuleFactory; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "k", function() { return ViewType; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return view_utils; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "m", function() { return DebugContext; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "l", function() { return StaticNodeDebugInfo; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "p", function() { return devModeEqual; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "n", function() { return UNINITIALIZED; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "j", function() { return ValueUnwrapper; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return TemplateRef_; });
-/* unused harmony export RenderDebugInfo */
-/* harmony export (binding) */ __webpack_require__.d(exports, "C", function() { return Console; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "B", function() { return reflector; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "M", function() { return Reflector; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "N", function() { return ReflectionCapabilities; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "s", function() { return NoOpAnimationPlayer; });
-/* unused harmony export AnimationPlayer */
-/* harmony export (binding) */ __webpack_require__.d(exports, "u", function() { return AnimationSequencePlayer; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "t", function() { return AnimationGroupPlayer; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "q", function() { return AnimationKeyframe; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "r", function() { return AnimationStyles; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "D", function() { return ANY_STATE; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "E", function() { return DEFAULT_STATE; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "F", function() { return EMPTY_STATE; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "I", function() { return FILL_STYLE_FLAG; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "v", function() { return prepareFinalAnimationStyles; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "w", function() { return balanceAnimationKeyframes; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "x", function() { return clearStyles; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "z", function() { return collectAndResolveStyles; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "y", function() { return renderStyles; });
-/* unused harmony export ViewMetadata */
-/* harmony export (binding) */ __webpack_require__.d(exports, "K", function() { return ComponentStillLoadingError; });
-/* harmony export (binding) */ __webpack_require__.d(exports, "A", function() { return AnimationTransition; });
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-
-var isDefaultChangeDetectionStrategy = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].isDefaultChangeDetectionStrategy;
-var ChangeDetectorStatus = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ChangeDetectorStatus;
-var LifecycleHooks = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].LifecycleHooks;
-var LIFECYCLE_HOOKS_VALUES = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].LIFECYCLE_HOOKS_VALUES;
-var ReflectorReader = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ReflectorReader;
-var ViewContainer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ViewContainer;
-var CodegenComponentFactoryResolver = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].CodegenComponentFactoryResolver;
-var ComponentRef_ = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ComponentRef_;
-var AppView = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AppView;
-var DebugAppView = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].DebugAppView;
-var NgModuleInjector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].NgModuleInjector;
-var registerModuleFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].registerModuleFactory;
-var ViewType = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ViewType;
-var view_utils = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].view_utils;
-var DebugContext = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].DebugContext;
-var StaticNodeDebugInfo = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].StaticNodeDebugInfo;
-var devModeEqual = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].devModeEqual;
-var UNINITIALIZED = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].UNINITIALIZED;
-var ValueUnwrapper = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ValueUnwrapper;
-var TemplateRef_ = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].TemplateRef_;
-var RenderDebugInfo = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].RenderDebugInfo;
-var Console = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].Console;
-var reflector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].reflector;
-var Reflector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].Reflector;
-var ReflectionCapabilities = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ReflectionCapabilities;
-var NoOpAnimationPlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].NoOpAnimationPlayer;
-var AnimationPlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationPlayer;
-var AnimationSequencePlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationSequencePlayer;
-var AnimationGroupPlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationGroupPlayer;
-var AnimationKeyframe = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationKeyframe;
-var AnimationStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationStyles;
-var ANY_STATE = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ANY_STATE;
-var DEFAULT_STATE = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].DEFAULT_STATE;
-var EMPTY_STATE = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].EMPTY_STATE;
-var FILL_STYLE_FLAG = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].FILL_STYLE_FLAG;
-var prepareFinalAnimationStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].prepareFinalAnimationStyles;
-var balanceAnimationKeyframes = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].balanceAnimationKeyframes;
-var clearStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].clearStyles;
-var collectAndResolveStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].collectAndResolveStyles;
-var renderStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].renderStyles;
-var ViewMetadata = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ViewMetadata;
-var ComponentStillLoadingError = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ComponentStillLoadingError;
-var AnimationTransition = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationTransition;
-//# sourceMappingURL=private_import_core.js.map
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
 "use strict";
 var root_1 = __webpack_require__(47);
 var toSubscriber_1 = __webpack_require__(698);
@@ -2208,6 +2106,108 @@ var Observable = (function () {
 }());
 exports.Observable = Observable;
 //# sourceMappingURL=Observable.js.map
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(exports, "H", function() { return isDefaultChangeDetectionStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "o", function() { return ChangeDetectorStatus; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "G", function() { return LifecycleHooks; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "L", function() { return LIFECYCLE_HOOKS_VALUES; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "J", function() { return ReflectorReader; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return ViewContainer; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "f", function() { return CodegenComponentFactoryResolver; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "g", function() { return ComponentRef_; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return AppView; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return DebugAppView; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "h", function() { return NgModuleInjector; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "i", function() { return registerModuleFactory; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "k", function() { return ViewType; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return view_utils; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "m", function() { return DebugContext; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "l", function() { return StaticNodeDebugInfo; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "p", function() { return devModeEqual; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "n", function() { return UNINITIALIZED; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "j", function() { return ValueUnwrapper; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return TemplateRef_; });
+/* unused harmony export RenderDebugInfo */
+/* harmony export (binding) */ __webpack_require__.d(exports, "C", function() { return Console; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "B", function() { return reflector; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "M", function() { return Reflector; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "N", function() { return ReflectionCapabilities; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "s", function() { return NoOpAnimationPlayer; });
+/* unused harmony export AnimationPlayer */
+/* harmony export (binding) */ __webpack_require__.d(exports, "u", function() { return AnimationSequencePlayer; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "t", function() { return AnimationGroupPlayer; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "q", function() { return AnimationKeyframe; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "r", function() { return AnimationStyles; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "D", function() { return ANY_STATE; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "E", function() { return DEFAULT_STATE; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "F", function() { return EMPTY_STATE; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "I", function() { return FILL_STYLE_FLAG; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "v", function() { return prepareFinalAnimationStyles; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "w", function() { return balanceAnimationKeyframes; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "x", function() { return clearStyles; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "z", function() { return collectAndResolveStyles; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "y", function() { return renderStyles; });
+/* unused harmony export ViewMetadata */
+/* harmony export (binding) */ __webpack_require__.d(exports, "K", function() { return ComponentStillLoadingError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "A", function() { return AnimationTransition; });
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+var isDefaultChangeDetectionStrategy = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].isDefaultChangeDetectionStrategy;
+var ChangeDetectorStatus = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ChangeDetectorStatus;
+var LifecycleHooks = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].LifecycleHooks;
+var LIFECYCLE_HOOKS_VALUES = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].LIFECYCLE_HOOKS_VALUES;
+var ReflectorReader = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ReflectorReader;
+var ViewContainer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ViewContainer;
+var CodegenComponentFactoryResolver = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].CodegenComponentFactoryResolver;
+var ComponentRef_ = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ComponentRef_;
+var AppView = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AppView;
+var DebugAppView = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].DebugAppView;
+var NgModuleInjector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].NgModuleInjector;
+var registerModuleFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].registerModuleFactory;
+var ViewType = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ViewType;
+var view_utils = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].view_utils;
+var DebugContext = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].DebugContext;
+var StaticNodeDebugInfo = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].StaticNodeDebugInfo;
+var devModeEqual = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].devModeEqual;
+var UNINITIALIZED = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].UNINITIALIZED;
+var ValueUnwrapper = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ValueUnwrapper;
+var TemplateRef_ = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].TemplateRef_;
+var RenderDebugInfo = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].RenderDebugInfo;
+var Console = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].Console;
+var reflector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].reflector;
+var Reflector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].Reflector;
+var ReflectionCapabilities = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ReflectionCapabilities;
+var NoOpAnimationPlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].NoOpAnimationPlayer;
+var AnimationPlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationPlayer;
+var AnimationSequencePlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationSequencePlayer;
+var AnimationGroupPlayer = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationGroupPlayer;
+var AnimationKeyframe = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationKeyframe;
+var AnimationStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationStyles;
+var ANY_STATE = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ANY_STATE;
+var DEFAULT_STATE = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].DEFAULT_STATE;
+var EMPTY_STATE = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].EMPTY_STATE;
+var FILL_STYLE_FLAG = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].FILL_STYLE_FLAG;
+var prepareFinalAnimationStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].prepareFinalAnimationStyles;
+var balanceAnimationKeyframes = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].balanceAnimationKeyframes;
+var clearStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].clearStyles;
+var collectAndResolveStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].collectAndResolveStyles;
+var renderStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].renderStyles;
+var ViewMetadata = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ViewMetadata;
+var ComponentStillLoadingError = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].ComponentStillLoadingError;
+var AnimationTransition = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].AnimationTransition;
+//# sourceMappingURL=private_import_core.js.map
 
 /***/ },
 /* 14 */
@@ -4628,7 +4628,7 @@ var ControlContainer = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__);
@@ -4937,7 +4937,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var Subscriber_1 = __webpack_require__(24);
 var Subscription_1 = __webpack_require__(146);
 var ObjectUnsubscribedError_1 = __webpack_require__(373);
@@ -5643,7 +5643,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__output_class_builder__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__parse_util__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__schema_element_schema_registry__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__template_parser_binding_parser__ = __webpack_require__(265);
 /* unused harmony export DirectiveWrapperCompileResult */
@@ -6337,7 +6337,7 @@ var NAMED_ENTITIES = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_identifier_util__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(13);
 /* harmony export (immutable) */ exports["a"] = getPropertyInView;
 /* harmony export (immutable) */ exports["b"] = injectFromViewParentInjector;
 /* harmony export (immutable) */ exports["c"] = getViewClassName;
@@ -8018,7 +8018,7 @@ function makePropDecorator(name, props, parentClass) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return EventEmitter; });
 /* unused harmony reexport Observable */
@@ -15115,7 +15115,7 @@ var SelectorContext = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ml_parser_interpolation_config__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ml_parser_tags__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__parse_util__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__provider_analyzer__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__schema_element_schema_registry__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__selector__ = __webpack_require__(110);
@@ -20330,7 +20330,7 @@ var PlatformLocation = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__parse_util__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__schema_element_schema_registry__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__animation_ast__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__styles_collection__ = __webpack_require__(407);
@@ -21243,7 +21243,7 @@ var TemplatePreparseVisitor = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util__ = __webpack_require__(38);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DirectiveResolver; });
 /**
@@ -22159,7 +22159,7 @@ var I18nError = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lifecycle_reflector__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_module_resolver__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pipe_resolver__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__schema_element_schema_registry__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__url_resolver__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__util__ = __webpack_require__(38);
@@ -23163,7 +23163,7 @@ function getHtmlTagDefinition(tagName) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_value_util__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__parse_util__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__provider_analyzer__ = __webpack_require__(261);
 /* unused harmony export ComponentFactoryDependency */
 /* unused harmony export NgModuleCompileResult */
@@ -23400,7 +23400,7 @@ var InjectMethodVars = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(13);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgModuleResolver; });
 /**
  * @license
@@ -23920,7 +23920,7 @@ function concatClassBuilderParts(builders) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(13);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PipeResolver; });
 /**
  * @license
@@ -26098,7 +26098,7 @@ function _createDependency(token, optional, lowerBoundVisibility, upperBoundVisi
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return EventEmitter; });
 /* unused harmony reexport Observable */
@@ -29607,8 +29607,10 @@ var TreeNode = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(679);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AuthenticationService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -29619,6 +29621,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -29638,7 +29641,11 @@ var AuthenticationService = (function () {
         });
     };
     AuthenticationService.prototype.logout = function () {
-        localStorage.removeItem('auth_token');
+        return new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (observer) {
+            setTimeout(function () {
+                localStorage.removeItem('auth_token');
+            }, 1000);
+        });
     };
     AuthenticationService.prototype.isLoggedIn = function () {
         return !!localStorage.getItem('auth_token');
@@ -30153,7 +30160,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -30490,7 +30497,7 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 var root_1 = __webpack_require__(47);
 var isArray_1 = __webpack_require__(236);
 var isPromise_1 = __webpack_require__(376);
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var iterator_1 = __webpack_require__(232);
 var InnerSubscriber_1 = __webpack_require__(673);
 var observable_1 = __webpack_require__(233);
@@ -31264,7 +31271,7 @@ var AnimationSequenceAst = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_ast__ = __webpack_require__(243);
 /* unused harmony export AnimationEntryCompileResult */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnimationCompiler; });
@@ -31695,7 +31702,7 @@ function createBindFieldExpr(bindingId) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_parser_template_ast__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identifier_util__ = __webpack_require__(31);
 /* harmony export (immutable) */ exports["b"] = writeToRenderer;
@@ -36016,7 +36023,7 @@ function addQueryToTokenMap(map, query) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__compile_method__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__compile_pipe__ = __webpack_require__(423);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__compile_query__ = __webpack_require__(268);
@@ -40262,7 +40269,7 @@ var BrowserJsonp = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__base_response_options__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums__ = __webpack_require__(52);
@@ -40424,7 +40431,7 @@ var JSONPBackend_ = (function (_super) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__base_response_options__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums__ = __webpack_require__(52);
@@ -44403,7 +44410,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var ScalarObservable_1 = __webpack_require__(366);
 var EmptyObservable_1 = __webpack_require__(228);
 var isScheduler_1 = __webpack_require__(697);
@@ -44532,7 +44539,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var root_1 = __webpack_require__(47);
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -44658,7 +44665,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -47493,7 +47500,7 @@ var StylesCollection = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng_module_compiler__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng_module_resolver__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipe_resolver__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__resource_loader__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__runtime_compiler__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__schema_dom_element_schema_registry__ = __webpack_require__(263);
@@ -47947,7 +47954,7 @@ var TranslationBundle = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__private_import_core__ = __webpack_require__(13);
 /* harmony export (immutable) */ exports["a"] = hasLifecycleHook;
 /**
  * @license
@@ -50640,7 +50647,7 @@ function handleEventExpr(compileElement) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directive_wrapper_compiler__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__template_parser_template_ast__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants__ = __webpack_require__(112);
 /* harmony export (immutable) */ exports["b"] = bindDirectiveAfterContentLifecycleCallbacks;
@@ -50719,7 +50726,7 @@ function bindPipeDestroyLifecycleCallbacks(pipeMeta, pipeInstance, view) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directive_wrapper_compiler__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__template_parser_template_ast__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__constants__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util__ = __webpack_require__(58);
@@ -50948,7 +50955,7 @@ var ViewBinderVisitor = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_class_builder__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_output_ast__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__private_import_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__template_parser_template_ast__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__compile_element__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__compile_view__ = __webpack_require__(269);
@@ -56590,7 +56597,7 @@ function sanitizeStyle(value) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__);
@@ -57530,7 +57537,7 @@ var getDOM = __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* __pl
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
@@ -58341,14 +58348,19 @@ var TopmenuComponent = (function () {
         this.alertService = alertService;
         this.loading = false;
         this.loggedIn = false;
-        this.loading = false;
     }
     TopmenuComponent.prototype.ngOnInit = function () {
         this.returnUrl = this.route.snapshot.params['returnUrl'] || '/';
+        this.loading = false;
     };
     TopmenuComponent.prototype.onLogout = function () {
+        var _this = this;
         this.loading = true;
-        this.authenticationService.logout();
+        this.authenticationService.logout().subscribe(function () {
+            _this.router.navigate(['/login']);
+        }, function (error) {
+            _this.loading = false;
+        });
     };
     TopmenuComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -61500,7 +61512,7 @@ module.exports = "<div class=\"col-md-6 col-md-offset-3\">\n  <h2>Register</h2>\
 /* 672 */
 /***/ function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-inverse\" role=\"navigation\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\"\n        aria-controls=\"navbar\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    </button>\n      <a class=\"navbar-brand\" [routerLink]=\"['/home']\">Talking Things <small>&copy;</small></a>\n      <!--<a class=\"navbar-brand\" href=\"#\">\n        <img alt=\"Brand\" src=\"...\">\n      </a>-->\n    </div>\n    <div id=\"navbar\" class=\"navbar-collapse collapse\">\n      <ul class=\"nav navbar-nav pull-right\">\n        <li *ngIf=\"!authenticationService.isLoggedIn()\" [routerLinkActive]=\"['link-active']\">\n          <a [routerLink]=\"['/login']\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i> Login</a>\n        </li>\n        <li *ngIf=\"authenticationService.isLoggedIn()\">\n          <a (click)=\"onLogout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
+module.exports = "<nav class=\"navbar navbar-default navbar-inverse\" role=\"navigation\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\"\n        aria-controls=\"navbar\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    </button>\n      <a class=\"navbar-brand\" [routerLink]=\"['/home']\">Talking Things <small>&copy;</small></a>\n      <!--<a class=\"navbar-brand\" href=\"#\">\n        <img alt=\"Brand\" src=\"...\">\n      </a>-->\n    </div>\n    <div id=\"navbar\" class=\"navbar-collapse collapse\">\n      <ul class=\"nav navbar-nav pull-right\">\n        <li *ngIf=\"!authenticationService.isLoggedIn()\" [routerLinkActive]=\"['link-active']\">\n          <a [routerLink]=\"['/login']\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i> Login</a>\n        </li>\n        <li *ngIf=\"authenticationService.isLoggedIn()\">          \n          <a (click)=\"onLogout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout <i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-fw\"></i></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
 
 /***/ },
 /* 673 */
@@ -61550,7 +61562,7 @@ exports.InnerSubscriber = InnerSubscriber;
 
 "use strict";
 "use strict";
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 /**
  * Represents a push-based event or value that an {@link Observable} can emit.
  * This class is particularly useful for operators that manage notifications,
@@ -61883,7 +61895,7 @@ exports.SubjectSubscription = SubjectSubscription;
 
 "use strict";
 "use strict";
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var map_1 = __webpack_require__(102);
 Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
@@ -61899,7 +61911,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var ScalarObservable_1 = __webpack_require__(366);
 var EmptyObservable_1 = __webpack_require__(228);
 /**
@@ -61982,7 +61994,7 @@ var IteratorObservable_1 = __webpack_require__(682);
 var ArrayObservable_1 = __webpack_require__(364);
 var ArrayLikeObservable_1 = __webpack_require__(680);
 var iterator_1 = __webpack_require__(232);
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var observeOn_1 = __webpack_require__(372);
 var observable_1 = __webpack_require__(233);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
@@ -62098,7 +62110,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var root_1 = __webpack_require__(47);
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(12);
 var iterator_1 = __webpack_require__(232);
 /**
  * We need this JSDoc comment for affecting ESDoc.
