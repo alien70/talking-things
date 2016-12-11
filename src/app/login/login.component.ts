@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     returnUrl: string;
 
     constructor(
-        private route: ActivatedRoute
+          private route: ActivatedRoute
         , private router: Router
         , private authenticationService: AuthenticationService
         , private alertService: AlertService
@@ -29,14 +29,14 @@ export class LoginComponent implements OnInit {
 
         // get return url from route parameters or default to '/'
         this.returnUrl = this.route.snapshot.params['returnUrl'] || '/';
-        
+
     }
 
     login() {
         this.loading = true;
         this.authenticationService.login(this.model.username, this.model.password)
             .subscribe(
-            data => {
+            (token: any) => {
                 this.router.navigate(['/']);
             },
             error => {

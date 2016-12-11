@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
+import { Observable } from 'rxjs/Observable';
+import { AlertService } from '../alert.service';
+
 import { User } from '../models/user';
 
 @Component({
@@ -10,17 +14,20 @@ import { User } from '../models/user';
 })
 export class TopmenuComponent implements OnInit {
     loggedIn: boolean = false;
-    user: User;
+    returnUrl: string;
 
-    constructor(private authenticationService: AuthenticationService) {
-
+    constructor(
+        private authenticationService: AuthenticationService
+        , private route: ActivatedRoute
+        , private router: Router
+        , private alertService: AlertService) {
     }
 
     ngOnInit() {
-        this.authenticationService.isLoggedIn().subscribe((user: User) => {
-            this.user = user;
-            this.loggedIn = (this.user != null);
-            console.log(JSON.stringify(user));
-        });
+        this.returnUrl = this.route.snapshot.params['returnUrl'] || '/';
+    }
+
+    onLogout() {
+        this.authenticationService.logout();
     }
 }
