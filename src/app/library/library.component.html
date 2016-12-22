@@ -2,7 +2,7 @@
   <section *ngIf="isLoading && !errorMessage">
     <i class="fa fa fa-gear fa-spin"></i>Loading our hyperdrives!!! Retrieving data...
   </section>
-  <div class="panel panel-default">
+  <div class="panel panel-default" *ngIf="!(isLoading || errorMessage)">
     <div class="panel-heading">My Personal Library</div>
     <div class="panel-body">
       <button (click)="onNew()" type="button" class="btn btn-success"><i class="fa fa-plus-square-o" aria-hidden="true"></i> New</button>
