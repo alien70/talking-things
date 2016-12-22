@@ -13,14 +13,12 @@ import { AlertComponent } from './alert/alert.component';
 
 import { AuthGuard } from './auth.guard';
 
-import { FakeBackendProvider } from './helpers/fake-backend';
+// import { FakeBackendProvider } from './helpers/fake-backend';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 
-import { AuthenticationService } from './authentication.service';
-import { AlertService } from './alert.service';
-import { UserService } from './user.service';
 import { TopmenuComponent } from './topmenu/topmenu.component';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +28,8 @@ import { TopmenuComponent } from './topmenu/topmenu.component';
     LoginComponent,
     RegistrationComponent,
     AlertComponent,
-    TopmenuComponent
+    TopmenuComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +38,7 @@ import { TopmenuComponent } from './topmenu/topmenu.component';
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
+      { path: 'library', component: LibraryComponent },
       { path: 'login', component: LoginComponent },
       { path: 'logout', redirectTo: 'home' },
       { path: 'register', component: RegistrationComponent },
@@ -48,11 +48,8 @@ import { TopmenuComponent } from './topmenu/topmenu.component';
   ],
   providers: [
     AuthGuard,
-    AuthenticationService,
-    AlertService,
-    UserService,
 
-    FakeBackendProvider,
+    // FakeBackendProvider,
     MockBackend,
     BaseRequestOptions
   ],

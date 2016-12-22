@@ -1,19 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: []
 })
 export class HomeComponent implements OnInit {
-  title = 'home works!';
-  connectionString = environment.data.defaultConnection.connectionString;
+  title = 'Home Page'
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
   }
-
 }

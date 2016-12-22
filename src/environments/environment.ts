@@ -6,9 +6,8 @@
 export const environment = {
   production: false,
   envName: 'development',
-  data: {
-    defaultConnection: {
-      connectionString: 'Development connection string'
-    }
+  bookStoreApi: {
+    server: 'http://localhost:5000/',
+    apiUrl: 'api'
   }
 };

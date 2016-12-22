@@ -1,9 +1,8 @@
 export const environment = {
   production: true,
   envName: 'production',
-  data: {
-    defaultConnection: {
-      connectionString: 'Production connection string'
-    }
+  bookStoreApi: {
+    server: 'http://talking-things-api.azurewebsites.net/',
+    apiUrl: 'api'
   }
 };
