@@ -11,44 +11,50 @@ export class BookStoreService {
     private baseUrl: string;
 
     constructor(private _http: Http) {
-        this.baseUrl = environment.bookStoreApi.server + environment.bookStoreApi.apiUrl;
+        this.baseUrl = environment.bookStoreApi.server + environment.bookStoreApi.apiUrl + '/books/';
     }
 
     GetAll(): Observable<Book[]> {
 
-        let url = `${this.baseUrl}/books`;
-
         if (!environment.production)
-            console.log(url);
+            console.log(this.baseUrl);
 
-        let books$ = this._http.get(url, { headers: this.GetHeaders() })
-            .map(mapBooks);
+        let books$ = this._http.get(this.baseUrl, { headers: this.GetHeaders() })
+            .map(mapBooks)
+            .catch(handleError);
 
         return books$;
     }
 
-    // public GetById = (id: string): Observable<Book> => {
-    //   return this._http.get(this.actionUrl + id)
-    //     .map(this.mapBooks)
-    //     .catch(this.handleError);
-    // }
+    public GetById = (id: string): Observable<Book> => {
+        let books$ = this._http.get(this.baseUrl + id, { headers: this.GetHeaders() })
+            .map(mapBooks)
+            .catch(handleError);
+        return books$;
+    }
 
-    // public Create = (book: Book): Observable<Book> => {
-    //   return this._http.post(this.actionUrl, book, { headers: this.headers })
-    //     .map(this.mapBooks)
-    //     .catch(this.handleError);
-    // }
+    public Create = (book: Book): Observable<Book> => {
+        let book$ = this._http.post(this.baseUrl, book, { headers: this.GetHeaders() })
+            .map(mapBooks)
+            .catch(handleError);
 
-    // public Update = (id: string, book: Book): Observable<Book> => {
-    //   return this._http.put(this.actionUrl + id, JSON.stringify(book), { headers: this.headers })
-    //     .map(this.mapBooks)
-    //     .catch(this.handleError);
-    // }
+        return book$;
+    }
 
-    // public Delete = (id: string): Observable<Book> => {
-    //   return this._http.delete(this.actionUrl + id)
-    //     .catch(this.handleError);
-    // }
+    public Update = (id: string, book: Book): Observable<Book> => {
+        let book$ = this._http.put(this.baseUrl + id, JSON.stringify(book), { headers: this.GetHeaders() })
+            .map(mapBooks)
+            .catch(handleError);
+
+        return book$;
+    }
+
+    public Delete = (id: string): Observable<Book> => {
+        let book$ = this._http.delete(this.baseUrl + id)
+            .catch(handleError);
+
+        return book$;
+    }
 
     private GetHeaders() {
         let headers = new Headers();
@@ -74,7 +80,7 @@ function toBook(r: any): Book {
         publicationYear: r.publicationYear,
         isAvailable: r.isAvailable
     });
-    
+
     if (!environment.production)
         console.log('Parsed book: ', book);
 

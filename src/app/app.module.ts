@@ -19,6 +19,7 @@ import { BaseRequestOptions } from '@angular/http';
 
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { LibraryComponent } from './library/library.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LibraryComponent } from './library/library.component';
     RegistrationComponent,
     AlertComponent,
     TopmenuComponent,
-    LibraryComponent
+    LibraryComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
