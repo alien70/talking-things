@@ -22356,15 +22356,11 @@ var RouterOutletMap = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `angular-cli.json`.
 var environment = {
-    production: false,
-    envName: 'development',
+    production: true,
+    envName: 'production',
     bookStoreApi: {
-        server: 'http://localhost:5000/',
+        server: 'http://talking-things-api.azurewebsites.net/',
         apiUrl: 'api'
     }
 };
@@ -69969,7 +69965,7 @@ module.exports = "<p>{{ title }}</p>"
 /* 720 */
 /***/ function(module, exports) {
 
-module.exports = "<section>\n  <section *ngIf=\"isLoading && !errorMessage\">\n    <i class=\"fa fa fa-gear fa-spin\"></i>Loading our hyperdrives!!! Retrieving data...\n  </section>\n  <div class=\"panel panel-default\" *ngIf=\"!(isLoading || errorMessage)\">\n    <div class=\"panel-heading\">My Personal Library</div>\n    <div class=\"panel-body\">\n      <button (click)=\"onNew()\" type=\"button\" class=\"btn btn-success\"><i class=\"fa fa-plus-square-o\" aria-hidden=\"true\"></i> New</button>\n    </div>\n    <table class=\"table table-bordered table-striped table-hover\">\n      <thead>\n        <tr>\n          <th>#</th>\n          <th>Authors</th>\n          <th>Title</th>\n          <th>Published</th>\n          <th>Available</th>\n          <th></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let book of books; let i = index\">\n          <td>{{ i + 1 }}</td>\n          <td>{{ book.authors }}</td>\n          <td>{{ book.title }}</td>\n          <td>{{ book.publicationYear }}</td>\n          <td>{{ book.isAvailable }}</td>\n          <td>\n            <button (click)=\"onEdit(book)\" type=\"button\" class=\"btn btn-primary\">\n              <i class=\"fa fa-pencil-square-o fa-fw\" aria-hidden=\"true\" title=\"Edit\"></i>\n            </button>\n            <button (click)=\"onDelete(book)\" type=\"button\" class=\"btn btn-danger\">\n              <i class=\"fa fa-trash-o fa-fw\" aria-hidden=\"true\" title=\"Delete\"></i>\n            </button>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <section *ngIf=\"errorMessage\">\n    {{errorMessage}}\n  </section>\n</section>\n<modal></modal>"
+module.exports = "<section>\n  <section *ngIf=\"isLoading && !errorMessage\">\n    <i class=\"fa fa fa-gear fa-spin\"></i>Loading our hyperdrives!!! Retrieving data...\n  </section>\n  <div class=\"panel panel-default\" *ngIf=\"!(isLoading || errorMessage)\">\n    <div class=\"panel-heading\">My Personal Library</div>\n    <div class=\"panel-body\">\n      <button (click)=\"onNew()\" type=\"button\" class=\"btn btn-success\"><i class=\"fa fa-plus-square-o\" aria-hidden=\"true\"></i> New</button>\n    </div>\n    <table class=\"table table-bordered table-striped table-hover\">\n      <thead>\n        <tr>\n          <th>#</th>\n          <th>Authors</th>\n          <th>Title</th>\n          <th>Published</th>\n          <th data-checkbox=\"true\">Available</th>\n          <th></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let book of books; let i = index\">\n          <td>{{ i + 1 }}</td>\n          <td>{{ book.authors }}</td>\n          <td>{{ book.title }}</td>\n          <td>{{ book.publicationYear }}</td>\n          <td>\n            <i *ngIf=\"book.isAvailable\" class=\"fa fa-check-square-o\" aria-hidden=\"true\"></i>\n            <i *ngIf=\"!book.isAvailable\" class=\"fa fa-square-o\" aria-hidden=\"true\"></i>\n            </td>\n          <td>\n            <button (click)=\"onEdit(book)\" type=\"button\" class=\"btn btn-primary\">\n              <i class=\"fa fa-pencil-square-o fa-fw\" aria-hidden=\"true\" title=\"Edit\"></i>\n            </button>\n            <button (click)=\"onDelete(book)\" type=\"button\" class=\"btn btn-danger\">\n              <i class=\"fa fa-trash-o fa-fw\" aria-hidden=\"true\" title=\"Delete\"></i>\n            </button>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <section *ngIf=\"errorMessage\">\n    {{errorMessage}}\n  </section>\n</section>\n<modal></modal>"
 
 /***/ },
 /* 721 */
