@@ -28,22 +28,20 @@ export class BookStoreService {
 
     public GetById = (id: string): Observable<Book> => {
         let books$ = this._http.get(this.baseUrl + id, { headers: this.GetHeaders() })
-            .map(mapBooks)
+            .map(response => response.json())
             .catch(handleError);
         return books$;
     }
 
-    public Create = (book: Book): Observable<Book> => {
-        let book$ = this._http.post(this.baseUrl, book, { headers: this.GetHeaders() })
-            .map(mapBooks)
+    public Create = (book: Book): Observable<any> => {
+        let book$ = this._http.post(this.baseUrl, book, { headers: this.GetHeaders() })            
             .catch(handleError);
 
         return book$;
     }
 
-    public Update = (id: string, book: Book): Observable<Book> => {
-        let book$ = this._http.put(this.baseUrl + id, JSON.stringify(book), { headers: this.GetHeaders() })
-            .map(mapBooks)
+    public Update = (id: string, book: Book): Observable<any> => {
+        let book$ = this._http.put(this.baseUrl + id, book, { headers: this.GetHeaders() })
             .catch(handleError);
 
         return book$;
@@ -88,5 +86,5 @@ function toBook(r: any): Book {
 }
 
 function handleError(error: Response) {
-    return Observable.throw(error.json().error || 'Server error');
+    return Observable.throw(error || 'Server error');
 }

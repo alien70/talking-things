@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs/Rx';
+import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
 import { BookStoreService } from '../bookstore.service';
 import { Book } from '../models/book';
@@ -23,7 +24,7 @@ export class LibraryComponent implements OnInit {
   @ViewChild(ModalComponent) modal: ModalComponent;
 
   private subscription: Subscription;
-  constructor(private _bookStoreService: BookStoreService) { }
+  constructor(private _router: Router, private _bookStoreService: BookStoreService) { }
 
   ngOnInit() {
     this.reloadData();
@@ -39,11 +40,13 @@ export class LibraryComponent implements OnInit {
   }
 
   onNew() {
-    console.log("onButtonNew");
+    console.log("onNew");
+    this._router.navigate(['/edit', 'new']);
   }
 
   onEdit(book: Book) {
     console.log('edit ' + book.id);
+    this._router.navigate(['/edit', book.id]);
   }
 
   onDelete(book) {
@@ -59,15 +62,14 @@ export class LibraryComponent implements OnInit {
             let b = this.books.find(item => item.id === book.id);
             let id = this.books.indexOf(b);
             this.books.splice(id, 1);
-            console.log(JSON.stringify(book));
+            if (!environment.production)
+              console.log(JSON.stringify(book));
           },
           error => {
             console.log(error);
           }
         );
       }
-
-      console.log(message + x);
 
       this.subscription.unsubscribe();
     });

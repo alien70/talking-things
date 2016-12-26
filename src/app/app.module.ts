@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
@@ -20,6 +20,7 @@ import { BaseRequestOptions } from '@angular/http';
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { LibraryComponent } from './library/library.component';
 import { ModalComponent } from './modal/modal.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ModalComponent } from './modal/modal.component';
     AlertComponent,
     TopmenuComponent,
     LibraryComponent,
-    ModalComponent
+    ModalComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { ModalComponent } from './modal/modal.component';
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'library', component: LibraryComponent },
+      { path: 'edit/:id', component: BookComponent },
       { path: 'login', component: LoginComponent },
       { path: 'logout', redirectTo: 'home' },
       { path: 'register', component: RegistrationComponent },

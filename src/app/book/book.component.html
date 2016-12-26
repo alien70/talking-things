@@ -1,0 +1,29 @@
+<div class="col-md-6 col-md-offset-3">
+  <h2>{{formTitle}}</h2>
+  <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && save()" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !title.valid }">
+      <label for="title">Title</label>
+      <input name="title" type="text" class="form-control" [(ngModel)]="book.title" #title="ngModel" required/>
+      <div *ngIf="f.submitted && !title.valid" class="help-block">Title is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !authors.valid }">
+      <label for="authors">Author</label>
+      <input name="authors" type="text" class="form-control" [(ngModel)]="book.authors" #authors="ngModel" required/>
+      <div *ngIf="f.submitted && !authors.valid" class="help-block">Authors is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !publicationYear.valid }">
+      <label for="publicationYear">Publication Year</label>
+      <input name="publicationYear" type="number" class="form-control" [(ngModel)]="book.publicationYear" #publicationYear="ngModel"
+        required/>
+      <div *ngIf="f.submitted && !publicationYear.valid" class="help-block">Publication year is required</div>
+    </div>
+    <div class="form-group">
+      <label for="available">Available</label>
+      <input name="available" type="checkbox" class="form-control" [(ngModel)]="book.isAvailable" #isAvailable="ngModel" />
+    </div>
+    <div class="form-group">
+      <button [disabled]="loading" class="btn btn-primary">Save</button>
+      <button (click)="onCancel()" class="btn btn-default">Cancel</button>
+    </div>
+  </form>
+</div>
