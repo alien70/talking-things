@@ -14,7 +14,7 @@
           <th>Authors</th>
           <th>Title</th>
           <th>Published</th>
-          <th>Available</th>
+          <th data-checkbox="true">Available</th>
           <th></th>
         </tr>
       </thead>
@@ -24,7 +24,10 @@
           <td>{{ book.authors }}</td>
           <td>{{ book.title }}</td>
           <td>{{ book.publicationYear }}</td>
-          <td>{{ book.isAvailable }}</td>
+          <td>
+            <i *ngIf="book.isAvailable" class="fa fa-check-square-o" aria-hidden="true"></i>
+            <i *ngIf="!book.isAvailable" class="fa fa-square-o" aria-hidden="true"></i>
+            </td>
           <td>
             <button (click)="onEdit(book)" type="button" class="btn btn-primary">
               <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true" title="Edit"></i>
